@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html leng="en">
+
+<head>
+    <title>Bootstrap Exmple</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initaial-scale">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="index.css"></script>
+    <style>
+        /* Remove the nabar's default margin-botton and rounded borders */
+        
+        .navbar {
+            margin-bottom: 0;
+            border-radius: 0;
+        }
+        /* Add a gray background color and some padding to the footer */
+        
+        footer {
+            background-color: blue;
+            padding: 25px;
+        }
+        
+        img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="index.html">Home</a></li>
+                    <li>
+                        <a href="aboutMe"></a>About Me</li>
+                    <li><a href="e-mail.html">Contact Me</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#"><span class="glyphicon glypicon-log-in"></span> Login</a>/li>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+
+    <body>
+
+        <h2>Send e-mail to sthezahadebe@gmail.com:</h2>
+
+        <form action="mailto:sthezahadebe@gmail.com" method="post" enctype="text/plain">
+            Name:<br>
+            <input type="text" name="name"><br> E-mail:
+            <br>
+            <input type="text" name="mail"><br> Comment:
+            <br>
+            <input type="text" name="comment" size="50"><br><br>
+            <input type="submit" value="Send">
+            <input type="reset" value="Reset">
+        </form>
+
+    </body>
+
+</html>
